@@ -266,6 +266,7 @@ export const toolbarSections = {
     'Cine',
     'Angle',
     'CobbAngle',
+    'Flatfoot',
     'Magnify',
     'CalibrationLine',
     'TagBrowser',

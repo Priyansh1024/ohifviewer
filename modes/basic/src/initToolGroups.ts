@@ -68,6 +68,7 @@ function initDefaultToolGroup(extensionManager, toolGroupService, commandsManage
       { toolName: toolNames.StackScroll },
       { toolName: toolNames.Angle },
       { toolName: toolNames.CobbAngle },
+      { toolName: toolNames.Flatfoot },
       { toolName: toolNames.Magnify },
       { toolName: toolNames.CalibrationLine },
       {

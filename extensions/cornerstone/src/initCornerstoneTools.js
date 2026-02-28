@@ -51,6 +51,7 @@ import * as polySeg from '@cornerstonejs/polymorphic-segmentation';
 
 import CalibrationLineTool from './tools/CalibrationLineTool';
 import ImageOverlayViewerTool from './tools/ImageOverlayViewerTool';
+import FlatfootTool from './tools/FlatfootTool';
 
 export default function initCornerstoneTools(configuration = {}) {
   CrosshairsTool.isAnnotation = false;
@@ -98,6 +99,7 @@ export default function initCornerstoneTools(configuration = {}) {
   addTool(ReferenceLinesTool);
   addTool(CalibrationLineTool);
   addTool(TrackballRotateTool);
+  addTool(FlatfootTool);
   addTool(ImageOverlayViewerTool);
   addTool(AdvancedMagnifyTool);
   addTool(UltrasoundDirectionalTool);
@@ -157,6 +159,7 @@ const toolNames = {
   ReferenceLines: ReferenceLinesTool.toolName,
   CalibrationLine: CalibrationLineTool.toolName,
   TrackballRotateTool: TrackballRotateTool.toolName,
+  Flatfoot: FlatfootTool.toolName,
   CircleScissors: CircleScissorsTool.toolName,
   RectangleScissors: RectangleScissorsTool.toolName,
   SphereScissors: SphereScissorsTool.toolName,

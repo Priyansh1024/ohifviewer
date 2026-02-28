@@ -40,6 +40,7 @@ const initMeasurementService = (
     UltrasoundDirectional,
     UltrasoundPleuraBLine,
     SegmentBidirectional,
+    Flatfoot,
   } = measurementServiceMappingsFactory(
     measurementService,
     displaySetService,
@@ -126,6 +127,14 @@ const initMeasurementService = (
     RectangleROI.matchingCriteria,
     RectangleROI.toAnnotation,
     RectangleROI.toMeasurement
+  );
+
+  measurementService.addMapping(
+    csTools3DVer1MeasurementSource,
+    'Flatfoot',
+    Flatfoot.matchingCriteria,
+    Flatfoot.toAnnotation,
+    Flatfoot.toMeasurement
   );
 
   measurementService.addMapping(

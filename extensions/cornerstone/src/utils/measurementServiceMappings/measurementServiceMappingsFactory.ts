@@ -14,6 +14,7 @@ import Probe from './Probe';
 import UltrasoundDirectional from './UltrasoundDirectional';
 import SegmentBidirectional from './SegmentBidirectional';
 import UltrasoundPleuraBLine from './UltrasoundPleuraBLine';
+import Flatfoot from './Flatfoot';
 
 const measurementServiceMappingsFactory = (
   measurementService: MeasurementService,
@@ -51,6 +52,7 @@ const measurementServiceMappingsFactory = (
       Probe: POINT,
       UltrasoundDirectional: POLYLINE,
       SegmentBidirectional: BIDIRECTIONAL,
+      Flatfoot: ANGLE,
     };
 
     return TOOL_TYPE_TO_VALUE_TYPE[toolType];
@@ -311,6 +313,23 @@ const measurementServiceMappingsFactory = (
         {
           valueType: MeasurementService.VALUE_TYPES.POLYLINE,
           points: 2,
+        },
+      ],
+    },
+    Flatfoot: {
+      toAnnotation: Flatfoot.toAnnotation,
+      toMeasurement: csToolsAnnotation =>
+        Flatfoot.toMeasurement(
+          csToolsAnnotation,
+          displaySetService,
+          cornerstoneViewportService,
+          _getValueTypeFromToolType,
+          customizationService
+        ),
+      matchingCriteria: [
+        {
+          valueType: MeasurementService.VALUE_TYPES.ANGLE,
+          points: 3,
         },
       ],
     },

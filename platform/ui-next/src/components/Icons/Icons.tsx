@@ -148,6 +148,7 @@ import {
   ToolSegmentLabel,
   ToolSculptor,
   ToolLabelmapEditWithContour,
+  ToolFlatfoot,
 } from './Sources/Tools';
 import ActionNewDialog from './Sources/ActionNewDialog';
 import NotificationInfo from './Sources/NotificationInfo';
@@ -447,6 +448,7 @@ export const Icons = {
   ToolLength,
   ToolMagneticRoi,
   ToolMagnify,
+  ToolFlatfoot,
   ToolMeasureEllipse,
   ToolMoreMenu,
   ToolMove,
@@ -696,6 +698,8 @@ export const Icons = {
   'tool-angle': (props: IconProps) => ToolAngle(props),
   'tool-annotate': (props: IconProps) => ToolAnnotate(props),
   'tool-bidirectional': (props: IconProps) => ToolBidirectional(props),
+  'tool-flatfoot': (props: IconProps) => ToolFlatfoot(props),
+  'icon-tool-flatfoot': (props: IconProps) => ToolFlatfoot(props),
   'tool-calibration': (props: IconProps) => ToolCalibrate(props),
   'tool-capture': (props: IconProps) => ToolCapture(props),
   'tool-cine': (props: IconProps) => ToolCine(props),

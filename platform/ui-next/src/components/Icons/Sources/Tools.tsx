@@ -798,6 +798,59 @@ export const ToolCobbAngle = (props: IconProps) => (
   </svg>
 );
 
+export const ToolFlatfoot = (props: IconProps) => (
+  <svg
+    width="28px"
+    height="28px"
+    viewBox="0 0 28 28"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g
+      id="tool-flatfoot"
+      stroke="none"
+      strokeWidth="1"
+      fill="none"
+      fillRule="evenodd"
+    >
+      <rect
+        id="Rectangle"
+        x="0"
+        y="0"
+        width="28"
+        height="28"
+      ></rect>
+      <g
+        id="Group"
+        transform="translate(4, 4)"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path
+          d="M2,18 L18,18"
+          id="baseline"
+          strokeDasharray="3,3"
+        ></path>
+        <path
+          d="M2,18 L10,6 L18,18"
+          id="arch"
+        ></path>
+        <line
+          x1="10"
+          y1="6"
+          x2="10"
+          y2="18"
+          id="height"
+          stroke="rgba(255, 255, 255, 1)"
+        ></line>
+      </g>
+    </g>
+  </svg>
+);
+
 export const ToolCreateThreshold = (props: IconProps) => (
   <svg
     width="25px"

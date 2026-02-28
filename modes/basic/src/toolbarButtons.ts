@@ -369,6 +369,17 @@ const toolbarButtons: Button[] = [
     },
   },
   {
+    id: 'Flatfoot',
+    uiType: 'ohif.toolButton',
+    props: {
+      icon: 'icon-tool-flatfoot',
+      label: i18n.t('Buttons:Flatfoot'),
+      tooltip: i18n.t('Buttons:Flatfoot'),
+      commands: setToolActiveToolbar,
+      evaluate: 'evaluate.cornerstoneTool',
+    },
+  },
+  {
     id: 'Magnify',
     uiType: 'ohif.toolButton',
     props: {
