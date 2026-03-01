@@ -89,7 +89,7 @@ const Flatfoot = {
       displayText: displayText,
       data: data.cachedStats,
       type: getValueTypeFromToolType(toolName),
-      getReport,
+      _getReport,
     };
   },
 };
